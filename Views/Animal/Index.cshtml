@@ -1,0 +1,16 @@
+﻿@using System.Text.Json
+@model List<NET_MVC.Models.Animal>
+<ul>
+    @foreach (var a in Model)
+    {
+        <li>@a.Name - @a.Age tuổi</li>
+    }
+</ul>
+
+<pre>
+    @JsonSerializer.Serialize(Model, new JsonSerializerOptions 
+    { 
+            WriteIndented = true,
+                ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles 
+        })
+</pre>
