@@ -1,11 +1,28 @@
 ﻿@using System.Text.Json
-@model List<NET_MVC.Models.Animal>
-<ul>
-    @foreach (var a in Model)
+@model List<NET_MVC.Dto.AnimalViewModel>
+<link rel="stylesheet" href="~/css/animal.css" />
+<h1>Danh sách thú cưng</h1>
+<table>
+    <tr>
+        <th>Loại</th>
+        <th>Tên</th>
+        <th>Tuổi</th>
+        <th>Người chăm sóc</th>
+        <th>Hành động</th>
+    </tr>
+    
+    @foreach (var animal in Model)
     {
-        <li>@a.Name - @a.Age tuổi</li>
+        <tr>
+            <td><a href="/chi-tiet-thu-cung/@animal.Id">@animal.CategoryName</a></td>
+            <td>@animal.Name</td>
+            <td>@animal.Age</td>
+            <td>@string.Join(", ", @animal.ListKeeper)</td>
+            <td>Edit</td>
+        </tr>
     }
-</ul>
+ 
+</table>
 
 <pre>
     @JsonSerializer.Serialize(Model, new JsonSerializerOptions 

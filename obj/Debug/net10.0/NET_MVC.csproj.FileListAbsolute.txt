@@ -304,3 +304,5 @@ C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\obj\Debug\net10.0\compressed\aebw20
 C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\bin\Debug\net10.0\Npgsql.dll
 C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\obj\Debug\net10.0\NET_MVC.sourcelink.json
+C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\obj\Debug\net10.0\compressed\bujxm0rmxj-{0}-if2anq8tbp-if2anq8tbp.gz

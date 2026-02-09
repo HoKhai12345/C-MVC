@@ -1,4 +1,5 @@
 wwwroot\css\admin.css
+wwwroot\css\animal.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
@@ -125,3 +126,4 @@ C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\wwwroot\lib\jquery\dist\jquery.slim
 C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\wwwroot\css\admin.css
+C:\Users\khaihq\source\repos\NET_MVC\NET_MVC\wwwroot\css\animal.css

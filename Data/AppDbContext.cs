@@ -14,9 +14,14 @@ namespace NET_MVC.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Keeper> Keepers { get; set; }
         public DbSet<AnimalKeeper> AnimalKeepers { get; set; }
-
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<RolePermission> RolePermissions { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<RolePermission>()
+            .HasKey(rp => new { rp.RoleId, rp.PermissionId });
             // Định nghĩa khóa chính kết hợp cho bảng trung gian
             modelBuilder.Entity<AnimalKeeper>().HasKey(ak => new { ak.AnimalId, ak.KeeperId });
             // Cấu hình quan hệ để EF hiểu cách join
