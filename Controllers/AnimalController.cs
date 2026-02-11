@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NET_MVC.Data;
 using NET_MVC.Dto;
@@ -15,6 +16,7 @@ namespace NET_MVC.Controllers
         }
 
         [Route("danh-sach-thu-cung")]
+        [Authorize]
         public IActionResult Index()
         {
             //var animals = _context.Animals
@@ -35,7 +37,7 @@ namespace NET_MVC.Controllers
             ListKeeper = a.AnimalKeepers.Select(ak => ak.Keeper.FullName).ToArray()
         })
         .ToList();
-            return View(animals);
+            return Ok(animals);
         }
 
         [Route("chi-tiet-thu-cung/{id}")]
